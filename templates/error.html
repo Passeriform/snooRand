@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>snooRand Error</title>
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon"/>
+    </head>
+    <body>
+        <div class='title'>
+            <h1><a href='{{ url_for("home") }}'>snooRand Error</a>: Looks like something unexpected happened :(</h1>
+        </div>
+
+        <div class='content'>
+            The sub reader couldn't be loaded due to an error.
+            <span>{{ stacktrace }}</span>
+        </div>
+    </body>
+</html>
